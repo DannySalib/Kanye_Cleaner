@@ -7,3 +7,4 @@ Does your spotify playlist have music from a self proclaimed Nazi???
 THEN LOOK NO FURTHER! 
 Remove Kanye West from your spotify playlist with Kanye_Cleaner!
 
+
