@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Playlist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Enter Playlist URL or URI</h1>
+    <form action="{{ url_for('remove_artist_tracks') }}" method="POST">
+        <input type="hidden" name="access_token" value="{{ access_token }}">
+        <label for="playlist_input">Playlist URL or URI:</label>
+        <input type="text" id="playlist_input" name="playlist_input" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
