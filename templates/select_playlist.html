@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <img src="{{ url_for('static', filename='images/your_image.jpg') }}" alt="Description of the image">
     <h1>Enter Playlist URL or URI</h1>
     <form action="{{ url_for('remove_artist_tracks') }}" method="POST">
         <input type="hidden" name="access_token" value="{{ access_token }}">
@@ -14,6 +15,5 @@
         <input type="text" id="playlist_input" name="playlist_input" required>
         <button type="submit">Submit</button>
     </form>
-    <img src="{{ url_for('static', filename='images/your_image.jpg') }}" alt="Description of the image">
 </body>
 </html>

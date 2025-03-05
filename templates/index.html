@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Playlist Cleaner</title>
+    <title>Playlist Cleaner</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Spotify Playlist Cleaner</h1>
+    <img src="{{ url_for('static', filename='images/KanyeNaziWest.jpg') }}" alt="Description of the image">
+    <h1>Remove Kanye from your Playlists</h1>
     <p>Click the button below to log in with Spotify and clean your playlist.</p>
     <a href="{{ auth_url }}"><button>Log in with Spotify</button></a>
-    <img src="{{ url_for('static', filename='images/KanyeNaziWest.jpg') }}" alt="Description of the image">
-
 </body>
 </html>
