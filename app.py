@@ -11,7 +11,7 @@ CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 if not CLIENT_ID or not CLIENT_SECRET:
     raise ValueError("Client ID or Client Secret not found in environment variables.")
 
-REDIRECT_URI = "http://localhost:8080/callback"
+REDIRECT_URI = "https://kanye-cleaner.onrender.com/callback"
 
 # Spotify API endpoints
 AUTH_URL = "https://accounts.spotify.com/authorize"
@@ -140,4 +140,5 @@ def extract_playlist_id(playlist_input):
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)  
+    app.run(host="0.0.0.0", port=8080)
+
